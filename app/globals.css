@@ -126,6 +126,26 @@
    WEATHER PARTICLE ANIMATIONS
    =============================== */
 
+/* ☁️ CLOUDY ANIMATIONS */
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-cloud-drift {
+  animation-name: cloud-drift;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 /* SUNNY ANIMATIONS */
 @keyframes sunny {
   0%, 100% {
@@ -140,5 +160,47 @@
   animation-name: sunny;
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+/* RAINY ANIMATIONS */
+@keyframes rain {
+  0% {
+    transform: translateY(0) rotate(var(--angle));
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(var(--angle));
+    opacity: 0;
+  }
+}
+
+.animate-rain {
+  animation-name: rain;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* WINDY ANIMATIONS */
+@keyframes wind {
+  0% {
+    transform: rotate(var(--angle)) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(var(--angle)) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+.animate-wind {
+  animation-name: wind;
+  animation-duration: 15s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
