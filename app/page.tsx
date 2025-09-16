@@ -14,10 +14,7 @@ export default function Home() {
           <div className="bg-muted h-full w-full overflow-clip rounded-3xl">
             <div className="relative h-full w-full">
               <div className="flex w-full max-w-sm flex-col gap-6">
-                <Tabs
-                  defaultValue="1h"
-                  className="absolute top-1/6 left-1/2 rounded-3xl -translate-x-1/2 w-80 aspect-[3/4] md:w-100 lg:w-180 overflow-hidden cursor-pointer transition-all duration-500"
-                >
+                <Tabs defaultValue="1h" className="absolute top-1/6 left-1/2 rounded-3xl -translate-x-1/2 w-80 h-full md:w-100 lg:w-180 overflow-hidden cursor-pointer transition-all duration-500">
                   <TabsList>
                     <TabsTrigger value="1h">1H time spent</TabsTrigger>
                     <TabsTrigger value="3h">3H time spent</TabsTrigger>
