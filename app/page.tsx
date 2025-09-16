@@ -1,8 +1,7 @@
 import WeatherWidgetV2 from "@/components/weather-widget-v2";
 
 // components
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // icons
 import WeatherWidgetV1 from "@/components/weather-widget-v1";
